@@ -4,3 +4,4 @@ https://github.com/Annie-Huang/react_webpack_starter
 
 ==============================================================
 
+C:\react\react_webpack_starter>npm init
