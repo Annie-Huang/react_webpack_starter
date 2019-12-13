@@ -13,10 +13,10 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "bable-loader"
+                    loader: "babel-loader"
                 }
             }
         ]
@@ -27,5 +27,4 @@ module.exports = {
             template: './src/index.html'
         })
     ]
-
 };

@@ -3,6 +3,10 @@ https://github.com/bradtraversy/react_webpack_starter
 https://github.com/Annie-Huang/react_webpack_starter
 
 https://github.com/jantimon/html-webpack-plugin
+https://www.valentinog.com/blog/babel/
+
+https://github.com/facebook/create-react-app/blob/master/package.json
+https://github.com/facebook/react/blob/master/package.json
 
 ==============================================================
 
@@ -12,13 +16,28 @@ C:\react\react_webpack_starter>npm i --save-dev webpack webpack-dev-server webpa
 C:\react\react_webpack_starter>npm i --save-dev babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin
 
 babel-preset-react:
+babel preset react for compiling JSX and other stuff down to Javascript
 
 babel-preset-env:
 It doesn't only compile ES6, and also later versions. and it also look at what browsers being use,
 and it compile whatever need to be compile to for that browsers. It's much intelligent plugin and preset than babel-present-2015
+babel preset env for compiling Javascript ES6 code down to ES5 (please note that babel-preset-es2015 is now deprecated)
 
 babel-loader:
 Able to compile jsx to whatever react use for tempering
 
 html-webpack-plugin:
 Generated out built html file
+
+=====================================
+
+Switch from babel-core, babel-preset-env, babel-preset-react  to @babel/core, @babel/preset-env, @babel/preset-react".
+
+C:\react\react_webpack_starter>npm uninstall babel-core
+C:\react\react_webpack_starter>npm uninstall babel-preset-react
+C:\react\react_webpack_starter>npm uninstall babel-preset-env
+C:\react\react_webpack_starter>npm install --save-dev @babel/core
+C:\react\react_webpack_starter>npm install --save-dev @babel/preset-react
+C:\react\react_webpack_starter>npm install --save-dev @babel/preset-env
+
+C:\react\react_webpack_starter>npm start
