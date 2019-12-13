@@ -8,6 +8,18 @@ https://www.valentinog.com/blog/babel/
 https://github.com/facebook/create-react-app/blob/master/package.json
 https://github.com/facebook/react/blob/master/package.json
 
+https://webpack.js.org/loaders/html-loader/
+    << if you want to display image, like <img src="image.png">, you can use html-loader instead of file-loader
+       And add this into your webpack.config.js
+             {
+               test: /\.html$/,
+               use: [
+                 {
+                   loader: "html-loader"
+                 }
+               ]
+             }
+             
 ==============================================================
 
 C:\react\react_webpack_starter>npm init
