@@ -50,3 +50,5 @@ C:\react\react_webpack_starter>npm run build
     << All the js file will be compile into index_bundle.js
        And you can see in index.html, it added this line in: <script type="text/javascript" src="index_bundle.js"></script></body>
        It is from html-webpack-plugin
+
+C:\react\react_webpack_starter>npm i prop-types --save-dev
